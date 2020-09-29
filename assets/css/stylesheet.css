@@ -1,0 +1,399 @@
+* {
+    /*red color - #BA0816 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 18px;
+}
+
+/*Hide class*/
+
+.hidden {
+    display: none;
+}
+
+/*main screen*/
+
+/*
+<i class="fas fa-bacon"></i>
+<i class="fas fa-carrot"></i>
+*/
+
+.headerColor {
+    color: white;
+    background-color: #BA0816;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerMain {
+    margin: 20px 0;
+    display: block;
+}
+
+.mainScreen-title-image {
+    background-image: url(../images/logo.jpg);
+    background-size: contain;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.mainScreen-article {
+    background-color: #BA0816;
+    margin-top: 1%;
+    padding: 16% 0;
+    width: 100%;
+    display: flex;
+}
+
+.mainScreen-article:active {
+    background-color: rgb(148, 9, 21)
+}
+
+.mainScreen-text {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    width: 80%;
+}
+
+.mainScreen-img-basic {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.mainScreen-img-nutri {
+    background-image: url(../images/clipboard-list-solid.png);
+}
+
+.mainScreen-img-recipe {
+    background-image: url(../images/utensils-solid.png);
+}
+
+.mainScreen-img-reminder {
+    background-image: url(../images/bell-solid.png);
+}
+
+.mainScreen-img-scan {
+    background-image: url(../images/qrcode-solid.png);
+}
+
+/* Nutritions */
+
+.search-image {
+    background-image: url(../images/search-solid.png);
+}
+
+.back-image {
+    background-image: url(../images/arrow-left-solid.png);
+}
+
+.Screen-title {
+    font-size: 1.8rem;
+}
+
+.nutritionScreen-text {
+    padding: 16% 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    text-shadow: 1.8px 1.8px 0 #222;
+}
+
+.nutritionVegAndFruit, 
+.nutritionMeatAndFish, 
+.nutritionDaries, 
+.nutritionDrinks, 
+.nutritionDeserts {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.nutritionVegAndFruit:active, 
+.nutritionMeatAndFish:active, 
+.nutritionDaries:active, 
+.nutritionDrinks:active, 
+.nutritionDeserts:active {
+    opacity: 0.8;
+}
+
+#nutritionVegAndFruit {
+    background-image: url(../images/vegandfruits.jpg);
+}
+
+#nutritionMeatAndFish {
+    background-image: url(../images/chicken.jpg);
+}
+
+#nutritionDaries {
+    background-image: url(../images/milk.jpg);
+} 
+
+#nutritionDrinks {
+    background-image: url(../images/drinks.jpg);
+}
+
+#nutritionDeserts {
+    background-image: url(../images/sweets.jpg);
+}
+
+/*Fruits and Vegetables*/
+
+
+
+.vegAndFruitScreen-message {
+    font-size: 0.6rem;
+}
+
+.vegAndFruitScreen-item-data-container {
+    align-self: center;
+    line-height: 1.6;
+    width: 34%;
+    
+}
+
+.vegAndFruitScreen-item-data-image {
+    width: 1.2rem;
+    height: 1.2rem;
+    align-self: center;
+}
+
+.fat-image {
+    background-image: url(../images/bacon-solid.png);
+}
+
+.fibre-image {
+    background-image: url(../images/blackMamba.png);
+}
+
+.sugar-image {
+    background-image: url(../images/cubes-solid.png);
+}
+
+.cal-image {
+    background-image: url(../images/pizza-slice-solid.png);
+}
+
+.dif-image {
+    background-image: url(../images/signal-solid.png);
+}
+
+.time-image {
+    background-image: url(../images/clock-solid.png);
+}
+
+.vegAndFruitScreen-item {
+    display: flex;
+    margin-top: 1%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.vegAndFruitScreen-item-data-image, 
+.vegAndFruitScreen-item-data-text {
+    width: 34%;
+    font-size: 0.8rem;
+}
+
+.vegAndFruitScreen-item-data-ffs, .flex {
+    display: flex;
+}
+
+.vegAndFruitScreen-item-image-container {
+    
+    background-size: cover;
+    width: 66%;
+    height: 16vh;
+    
+}
+
+.vaf-image1 {
+    background-image: url(../images/apple.jpg);
+}
+
+.vaf-image2 {
+    background-image: url(../images/asparagus.jpg);
+}
+
+.vaf-image3 {
+    background-image: url(../images/broccoli.jpg);
+}
+
+.vaf-image4 {
+    background-image: url(../images/carrot.jpg);
+}
+
+.vaf-image5 {
+    background-image: url(../images/grapefuit.jpg);
+}
+
+.vaf-image6 {
+    background-image: url(../images/tomato_soup.jpg);
+}
+
+.vaf-image7 {
+    background-image: url(../images/frikadelle.jpg);
+}
+
+.vaf-image8 {
+    background-image: url(../images/kale_salad.jpg);
+}
+
+.vaf-image9 {
+    background-image: url(../images/rye_salad.jpg);
+}
+
+.vaf-image10 {
+    background-image: url(../images/chocolate_rolls.jpg);
+}
+
+.vegAndFruitScreen-item-text {
+    color: #fff;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.0));
+    width: 80%;
+    font-size: 1.2rem;
+    text-shadow: 1.8px 1.8px 0 #222;
+}
+
+/*Recipe soup*/
+
+.basicSoup {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.recipe-bgColor {
+    background-color: #BA0816;
+    color: white;
+    padding: 2% 0;
+    padding-left: 6%;
+}
+
+article div div p {
+    margin: 3% 0;
+    padding-left: 6%;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+/*SCAN*/
+
+article h3 {
+    background-color: #BA0816;
+    margin: 5% 0;
+    padding: 5% 6%;
+    color: #fff;
+}
+
+.scanScreen {
+    height: 100vh;
+}
+
+.scanScreen-barcode-image {
+    background-image: url(../images/QR.jpg);
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scanArticle {
+    height: calc(100vh - 80px);
+    
+}
+
+/*REMINDERS*/
+
+.Screen-title2 {
+    font-size: 1.2rem;
+}
+
+.headerColor2 {
+    color: white;
+    background-color: #BA0816;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.btn-image {
+    background-image: url(../images/toggle-off-solid.png);
+    margin-right: 9%;
+}
+
+.btn-image2 {
+    background-image: url(../images/toggle-on-solid.png);
+    margin-right: 9%;
+}
+
+.custom-img1 {
+    background-image: url(../images/plus-solid.png);
+    margin-left: 9%;
+}
+
+.custom-img2 {
+    background-image: url(../images/pills-solid.png);
+    margin-left: 9%;
+}
+
+.custom-img3 {
+    background-image: url(../images/syringe-solid.png);
+    margin-left: 9%;
+}
+
+.custom-img4 {
+    background-image: url(../images/tint-solid.png);
+    margin-left: 9%;
+}
+
+.custom-img5 {
+    background-image: url(../images/walking-solid.png);
+    margin-left: 9%;
+}
+
+.custom-img6 {
+    background-image: url(../images/plus-solid.png);
+    margin-right: 9%;
+}
+
+.h3 {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #BA0816;
+    padding: 5% 6%;
+    color: #fff;
+}
+
+.extraImg1 {
+    background-image: url(../images/toggle-on-solid.png);
+    margin-right: 9%;
+}
+
+.extraImg2 {
+    background-image: url(../images/toggle-off-solid.png);
+    margin-right: 9%;
+}
+
+
+
+

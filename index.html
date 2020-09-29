@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <script src="assets/js/javaScript.js" defer async></script>
+    <title>Diabetes Foringen App</title>
+</head>
+
+<body>
+    <main>
+
+        <!--MAIN SCREEN-->
+        <section class="mainScreen" id="mainScreen">
+            <header class="headerColor headerMain">
+                <div class="mainScreen-title-image"></div>
+            </header>
+            <article class="mainScreen-article" id="mainScreen-nutri">
+                <div class="mainScreen-text">Nutrition Levels</div>
+                <div class="mainScreen-img-basic mainScreen-img-nutri"></div>
+            </article>
+            <article class="mainScreen-article" id="mainScreen-recipe">
+                <div class="mainScreen-text">Recipes</div>
+                <div class="mainScreen-img-basic mainScreen-img-recipe"></div>
+            </article>
+            <article class="mainScreen-article" id="mainScreen-reminder">
+                <div class="mainScreen-text">Reminders</div>
+                <div class="mainScreen-img-basic mainScreen-img-reminder"></div>
+            </article>
+            <article class="mainScreen-article" id="mainScreen-scan">
+                <div class="mainScreen-text">Scan</div>
+                <div class="mainScreen-img-basic mainScreen-img-scan"></div>
+            </article>
+        </section>
+
+        <!--Nutri Categories SCREEN-->
+        <section class="nutritionScreen hidden" id="nutritionScreen">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image" id="nutritionScreen-search-image"></div>
+                <div class="Screen-title">Nutritions</div>
+                <div class="mainScreen-img-basic back-image" id="nutritionScreen-back-image"></div>
+            </header>
+            <article class="nutritionVegAndFruit" id="nutritionVegAndFruit">
+                <div class="nutritionScreen-text">Fruits and Vegetables</div>
+            </article>
+            <article class="nutritionMeatAndFish" id="nutritionMeatAndFish">
+                <div class="nutritionScreen-text">Meat and Fish</div>
+            </article>
+            <article class="nutritionDaries" id="nutritionDaries">
+                <div class="nutritionScreen-text">Daries</div>
+            </article>
+            <article class="nutritionDrinks" id="nutritionDrinks">
+                <div class="nutritionScreen-text">Drinks</div>
+            </article>
+            <article class="nutritionDeserts" id="nutritionDeserts">
+                <div class="nutritionScreen-text">Deserts</div>
+            </article>
+        </section>
+
+        <!--Products SCREEN-->
+        <section class="vegAndFruitScreen hidden" id="vegAndFruitScreen">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image" id="vegAndFruits-search-image"></div>
+                <div class="vegAndFruitScreen-header-title-container">
+                    <div class="Screen-title">V &amp; F</div>
+                    <div class="vegAndFruitScreen-message">per 100gr/100ml</div>
+                </div>
+                <div class="mainScreen-img-basic back-image" id="nutritionScreen-back-image2"></div>
+            </header>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item10">
+                <div class="vegAndFruitScreen-item-image-container vaf-image1">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Apples</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fat</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.1g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fibre-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fib</div>
+                        <div class="vegAndFruitScreen-item-data-text">1.8g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic sugar-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">sug</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.9g</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item9">
+                <div class="vegAndFruitScreen-item-image-container vaf-image2">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Asparagus</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fat</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.2g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fibre-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fib</div>
+                        <div class="vegAndFruitScreen-item-data-text">1.8g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic sugar-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">sug</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.2g</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item8">
+                <div class="vegAndFruitScreen-item-image-container vaf-image3">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Bro-cool-i</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fat</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.4g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fibre-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fib</div>
+                        <div class="vegAndFruitScreen-item-data-text">2.4g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic sugar-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">sug</div>
+                        <div class="vegAndFruitScreen-item-data-text">1.5g</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item7">
+                <div class="vegAndFruitScreen-item-image-container vaf-image4">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Carrots</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fat</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.2g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fibre-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fib</div>
+                        <div class="vegAndFruitScreen-item-data-text">2.8g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic sugar-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">sug</div>
+                        <div class="vegAndFruitScreen-item-data-text">4.7g</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item6">
+                <div class="vegAndFruitScreen-item-image-container vaf-image5">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Grapefruit</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fat</div>
+                        <div class="vegAndFruitScreen-item-data-text">0.1g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fibre-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">fib</div>
+                        <div class="vegAndFruitScreen-item-data-text">2g</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic sugar-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">sug</div>
+                        <div class="vegAndFruitScreen-item-data-text">7g</div>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <!-- RECIPES-->
+
+        <section class="recipesScreen hidden" id="recipesScreen">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image" id="recipesScreen-search-image"></div>
+                <div class="Screen-title">Recipes</div>
+                <div class="mainScreen-img-basic back-image" id="recipesScreen-back-image3"></div>
+            </header>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item1">
+                <div class="vegAndFruitScreen-item-image-container vaf-image6">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Tomato Soup</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic cal-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">kcal</div>
+                        <div class="vegAndFruitScreen-item-data-text">950kJ</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic dif-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">dif</div>
+                        <div class="vegAndFruitScreen-item-data-text">Easy</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic time-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">time</div>
+                        <div class="vegAndFruitScreen-item-data-text">20m</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item2">
+                <div class="vegAndFruitScreen-item-image-container vaf-image7">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Frikadelle</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic cal-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">kcal</div>
+                        <div class="vegAndFruitScreen-item-data-text">850kJ</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic dif-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">dif</div>
+                        <div class="vegAndFruitScreen-item-data-text">Med</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic time-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">time</div>
+                        <div class="vegAndFruitScreen-item-data-text">60m</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item3">
+                <div class="vegAndFruitScreen-item-image-container vaf-image8">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Kale salad</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic cal-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">kcal</div>
+                        <div class="vegAndFruitScreen-item-data-text">520kJ</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic dif-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">dif</div>
+                        <div class="vegAndFruitScreen-item-data-text">Easy</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic time-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">time</div>
+                        <div class="vegAndFruitScreen-item-data-text">15m</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item4">
+                <div class="vegAndFruitScreen-item-image-container vaf-image9">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Rye salad</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">kcal</div>
+                        <div class="vegAndFruitScreen-item-data-text">400kJ</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic dif-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">dif</div>
+                        <div class="vegAndFruitScreen-item-data-text">Med</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic time-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">time</div>
+                        <div class="vegAndFruitScreen-item-data-text">30m</div>
+                    </article>
+                </div>
+            </article>
+
+            <article class="vegAndFruitScreen-item" id="vegAndFruitScreen-item5">
+                <div class="vegAndFruitScreen-item-image-container vaf-image10">
+                    <div class="vegAndFruitScreen-item-image "></div>
+                    <div class="vegAndFruitScreen-item-text">Chocolate rolls</div>
+                </div>
+                <div class="vegAndFruitScreen-item-data-container">
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic fat-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">kcal</div>
+                        <div class="vegAndFruitScreen-item-data-text">800kJ</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic dif-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">dif</div>
+                        <div class="vegAndFruitScreen-item-data-text">Easy</div>
+                    </article>
+                    <article class="vegAndFruitScreen-item-data-ffs">
+                        <div class="vegAndFruitScreen-item-data-image mainScreen-img-basic time-image"></div>
+                        <div class="vegAndFruitScreen-item-data-text">time</div>
+                        <div class="vegAndFruitScreen-item-data-text">20m</div>
+                    </article>
+                </div>
+            </article>
+
+        </section>
+
+        <!--Tomato soup Recipe SCREEN-->
+        <section class="recipeScreen hidden" id="recipeScreen">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image" id="recipeScreen-search-image"></div>
+                <div class="Screen-title">Tomato Soup</div>
+                <div class="mainScreen-img-basic back-image" id="recipeScreen-back-image"></div>
+            </header>
+            <article>
+                <div class="basicSoup vaf-image6">
+
+                </div>
+                <div>
+                    <div>
+                        <h2 class="recipe-bgColor">Information</h2>
+                        <p><strong>Type:</strong> Soup, Hot dishes<br>
+                            <strong>Nutritions:</strong> Energy 1450 kJ, Carbohydrate 25 g, Fat 14 g<br>
+                            <strong>Nr. of persons:</strong> 1 person</p>
+                    </div>
+                    <div>
+                        <h2 class="recipe-bgColor">Ingridients</h2>
+                        <p>½ leeks (about 60 g) <br>
+                            1 small carrot (about 50 g)<br>
+                            1 slice of cabbage (about 200 g)<br>
+                            75 g minced beef with a maximum of 10% fat<br>
+                            1 tsp. liquid fat<br>
+                            2½ dl vegetable broth<br>
+                            ½ ds. peeled tomatoes (200 g)<br>
+                            ½ tbsp. tomato paste, preferably concentrate<br>
+                            ½ tsp. mild pepper<br>
+                            salt, pepper</p>
+                    </div>
+                    <div>
+                        <h2 class="recipe-bgColor">Preparation</h2>
+                        <div>
+                            <p>Cut the leek into thin rings. Cut the carrot into small cubes. Cut the cabbage finely.
+                                <br>
+
+                                Brown the meat in the fat. Add the vegetables and sweat them. Add the remaining
+                                ingredients
+                                and cook the soup for 10-15 minutes. Taste the soup for. <br>
+
+                                <strong>Serving</strong> <br>
+                                Serve tomato soup with whole grain bread. <br>
+
+                                <strong>Alternative</strong> <br>
+                                You can replace the carrot or some of the cabbage with celery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--Reminders SCREEN-->
+        <section class="reminders hidden" id="reminders">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image"></div>
+                <div class="Screen-title">Reminders</div>
+                <div class="mainScreen-img-basic back-image" id="back-image-reminder"></div>
+            </header>
+
+            <article class="headerColor2">
+                <div class="mainScreen-img-basic custom-img1"></div>
+                <div class="Screen-title2">Custom</div>
+                <div class="mainScreen-img-basic custom-img6"></div>
+            </article>
+
+            <article class="headerColor2">
+                <div class="mainScreen-img-basic custom-img2"></div>
+                <div class="Screen-title2">Pills</div>
+                <div class="mainScreen-img-basic extraImg1" id="fancyButton"></div>
+            </article>
+
+            <article class="headerColor2">
+                <div class="mainScreen-img-basic custom-img3"></div>
+                <div class="Screen-title2">Insulin</div>
+                <div class="mainScreen-img-basic btn-image2"></div>
+            </article>
+
+            <article class="headerColor2">
+                <div class="mainScreen-img-basic custom-img4"></div>
+                <div class="Screen-title2">Water</div>
+                <div class="mainScreen-img-basic btn-image"></div>
+            </article>
+
+            <article class="headerColor2">
+                <div class="mainScreen-img-basic custom-img5"></div>
+                <div class="Screen-title2">Stand-up</div>
+                <div class="mainScreen-img-basic btn-image"></div>
+            </article>
+
+            
+        </section>
+
+        <!--Scan SCREEN-->
+        <section class="scanScreen hidden" id="scanScreen">
+            <header class="headerColor">
+                <div class="mainScreen-img-basic search-image" id="scanScreen-search-image"></div>
+                <div class="Screen-title">Scan</div>
+                <div class="mainScreen-img-basic back-image" id="scanScreen-back-image"></div>
+            </header>
+            <article class="scanScreen-barcode-image"></article>
+            <h3 class="h3">Scan the bar code to check if the product is diabetes friendly.</h3>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
